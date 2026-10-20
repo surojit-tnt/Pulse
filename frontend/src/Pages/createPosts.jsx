@@ -1,5 +1,3 @@
-import React from 'react'
-import { redirect } from 'react-router-dom'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
@@ -27,8 +25,8 @@ const createPosts = () => {
           <h1 className='mt-0 font-semibold text-2xl'>Create post</h1>
 
         <form action="" onSubmit={handleSubmit} className='flex flex-col gap-2'  >
-            <input type="file" name='image' accept='image/*' className='border-1 bg-zinc-300 pl-3 hover:cursor-pointer' />
-            <input className='border-zinc-500 border-1 p-2' type="text" placeholder='Enter caption...' name="caption" id="" required />
+            <input type="file" name='image' accept='image/*' className='border bg-zinc-300 pl-3 hover:cursor-pointer' />
+            <input className='border-zinc-500 border p-2' type="text" placeholder='Enter caption...' name="caption" id="" required />
             <button type='submit' className='p-2 rounded-md hover:cursor-pointer bg-black text-gray-100' >Submit</button>
 
         </form>
